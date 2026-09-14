@@ -1,16 +1,19 @@
-# finca_nazaret_app
+# 🌾 Finca - Aplicación Móvil
 
-A new Flutter project.
+Aplicación móvil multiplataforma desarrollada en **Flutter** y **Dart** para la gestión operativa, sanitaria y administrativa de la unidad de producción ganadera. 
 
-## Getting Started
+El sistema está diseñado para optimizar el registro de datos en campo, permitiendo el control diferenciado según los roles de trabajo y garantizando la persistencia local de la información en entornos rurales donde la conectividad a internet suele ser limitada o intermitente.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 📁 Estructura del Código Fuente (`lib/`)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```text
+lib/
+├── main.dart                 # Inicialización de la app, temas y ruta inicial
+├── login_page.dart           # Pantalla de autenticación y redirección por rol
+├── home_page.dart            # Panel principal de navegación
+├── database.dart             # Gestión de la base de datos y operaciones CRUD
+├── administrador_pages.dart  # Vistas y lógica para el rol de Administración
+├── vaquero_pages.dart        # Vistas y lógica para operaciones de campo
+└── veterinario_pages.dart    # Vistas y lógica para control sanitario y salud animal
